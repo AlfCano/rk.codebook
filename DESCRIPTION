@@ -1,0 +1,19 @@
+Package: rk.codebook
+Type: Package
+Title: An RKWard plugin for generating data dictionaries (codebooks)
+        using 'sjPlot'. Integrates RKWard variable labels into standard
+        HTML reports.
+Version: 0.0.1
+Date: 2025-12-19
+Author: Alfonso Cano
+Maintainer: Alfonso Cano <alfonso.cano@correo.buap.mx>
+Enhances: rkward
+Description: An RKWard plugin for generating data dictionaries
+        (codebooks) using 'sjPlot'. Integrates RKWard variable labels
+        into standard HTML reports.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyLoad: yes
+URL: https://github.com/AlfCano/rk.codebook
+Authors@R: person(given="Alfonso", family="Cano",
+        email="alfonso.cano@correo.buap.mx", role=c("aut", "cre"))

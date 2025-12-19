@@ -1,0 +1,55 @@
+<!DOCTYPE rkhelp >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<title>
+		Generate Codebook
+	</title>
+	<summary>
+	</summary>
+	<usage>
+	</usage>
+	<!--
+		<section id="sct_EDITORDE" title="EDIT OR DELETE ME">
+			EDIT OR DELETE ME
+		</section>
+	-->
+	<settings>
+		<setting id="cb_df">
+		</setting>
+		<caption id="frm_MtdtIntg" />
+		<setting id="cb_sync">
+		</setting>
+		<caption id="frm_TblCntnt" />
+		<setting id="show_type">
+		</setting>
+		<setting id="show_values">
+		</setting>
+		<setting id="show_labels">
+		</setting>
+		<setting id="show_frq">
+		</setting>
+		<setting id="show_prc">
+		</setting>
+		<setting id="show_na">
+		</setting>
+		<caption id="frm_Formttng" />
+		<setting id="max_len">
+		</setting>
+		<setting id="cb_save_obj">
+		</setting>
+	</settings>
+	<!--
+		<related>
+			<ul>
+				<li>
+					<link href="rkward://rhelp/..." />
+				</li>
+			</ul>
+		</related>
+	-->
+	<technical>
+	</technical>
+</document>

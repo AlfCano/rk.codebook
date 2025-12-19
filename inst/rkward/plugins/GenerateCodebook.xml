@@ -1,0 +1,45 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="GenerateCodebook.js" />
+	<help file="GenerateCodebook.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Generate Data Codebook">
+		<row id="row_vDMIMISRKW">
+			<varselector id="cb_selector" />
+			<column id="clm_vDMIMISRKW">
+				<varslot id="cb_df" label="Dataframe" source="cb_selector" classes="data.frame" required="true" />
+				<frame label="Metadata Integration" id="frm_MtdtIntg">
+					<checkbox id="cb_sync" label="Sync RKWard Variable Labels to Report" value="1" checked="true" />
+				</frame>
+				<frame label="Table Content" id="frm_TblCntnt">
+					<checkbox id="show_type" label="Show Variable Type" value="1" checked="true" />
+					<checkbox id="show_values" label="Show Values" value="1" checked="true" />
+					<checkbox id="show_labels" label="Show Value Labels" value="1" checked="true" />
+					<checkbox id="show_frq" label="Show Frequencies" value="1" checked="true" />
+					<checkbox id="show_prc" label="Show Percentages" value="1" checked="true" />
+					<checkbox id="show_na" label="Show Missing Values (NA)" value="1" checked="true" />
+				</frame>
+				<frame label="Formatting" id="frm_Formttng">
+					<spinbox label="Max Label Length (chars)" id="max_len" initial="50" min="10" max="500" />
+				</frame>
+				<saveobject label="Save HTML object as" checkable="true" initial="codebook_html" id="cb_save_obj" />
+				<preview label="Preview" id="codebook_preview" mode="output" />
+			</column>
+		</row>
+	</dialog>
+</document>

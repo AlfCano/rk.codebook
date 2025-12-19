@@ -1,0 +1,77 @@
+<!DOCTYPE
+	rkpluginmap
+>
+<document
+	base_prefix=""
+	namespace="GenerateCodebook"
+	id="GenerateCodebook_rkward"
+	po_id="GenerateCodebook_rkward"
+	priority="medium"
+>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<about
+		name="rk.codebook"
+		shortinfo="An RKWard plugin for generating data dictionaries (codebooks) using 'sjPlot'. Integrates RKWard variable labels into standard HTML reports."
+		longinfo="An RKWard plugin for generating data dictionaries (codebooks) using 'sjPlot'. Integrates RKWard variable labels into standard HTML reports."
+		version="0.0.1"
+		releasedate="2025-12-19"
+		url="https://github.com/AlfCano/rk.codebook"
+		license="GPL (&gt;= 3)"
+	>
+		<author
+			given="Alfonso"
+			family="Cano"
+			email="alfonso.cano@correo.buap.mx"
+			role="aut, cre"
+		/>
+	</about>
+	<require
+		map="rkward::menu"
+	/>
+	<require
+		map="rkward::embedded"
+	/>
+	<components>
+		<component
+			id="cmp_GenerateCodebookGenrtCdbk"
+			label="Generate Codebook"
+			type="standard"
+			file="plugins/GenerateCodebook.xml"
+		>
+		</component>
+	</components>
+	<hierarchy>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="DataDocumentationcodebook"
+				label="Data Documentation (codebook)"
+			>
+				<entry
+					component="cmp_GenerateCodebookGenrtCdbk"
+				/>
+			</menu>
+		</menu>
+	</hierarchy>
+	<!--
+		<context
+			id="x11"
+		>
+		</context>
+	-->
+	<!--
+		<context
+			id="import"
+		>
+		</context>
+	-->
+</document>
