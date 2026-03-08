@@ -3,6 +3,9 @@
 ![Version](https://img.shields.io/badge/Version-0.0.1-blue.svg)
 ![License](https://img.shields.io/badge/License-GPL--3-green.svg)
 ![R Version](https://img.shields.io/badge/R-%3E%3D%203.0.0-lightgrey.svg)
+![RKWard](https://img.shields.io/badge/Platform-RKWard-green)
+[![R Linter](https://github.com/AlfCano/rk.codebook/actions/workflows/lintr.yml/badge.svg)](https://github.com/AlfCano/rk.codebook/actions/workflows/lintr.yml)
+![AI Assistance](https://img.shields.io/badge/Created%20with-Gemini-4E86F8)
 
 **rk.codebook** generates professional HTML data dictionaries directly within RKWard. It bridges the gap between RKWard's internal variable labels and standard R reporting tools (powered by **[`sjPlot`](https://strengejacke.github.io/sjPlot/)**), allowing you to create instant "Codebooks" for your datasets.
 
@@ -72,6 +75,11 @@ rk.set.label(my_survey$satisfaction, "Self-reported Satisfaction (1-5)")
 
 ### Step 2: Generate the Report
 1.  Navigate to **Analysis > Data Documentation (codebook) > Generate Data Codebook**.
+
+  <img src="screenshots/example1.png" alt="Hierarchy" width="50%">
+  
+  *Screenshot of the path in the main menu.*
+
 2.  **Dataframe:** Select `my_survey`.
 3.  **Metadata Integration:** Ensure **"Sync RKWard Variable Labels to Report"** is checked.
 4.  **Table Content:**
@@ -79,11 +87,17 @@ rk.set.label(my_survey$satisfaction, "Self-reported Satisfaction (1-5)")
     *   Check **Show Missing Values (NA)**.
 5.  Click **Submit**.
 
+  <img src="screenshots/example2_1.png" alt="Codebook generation" width="60%">
+  *Screenshot of the RKWard interface showing the main panel of rk.codebook and the selection of variables for dictionary generation.*
+
 ### Result
 The Output Window will display a formatted HTML table where:
 *   The **Label** column displays the text set via `rk.set.label`.
 *   The **Values** column shows the factor levels ("Control", "Treatment").
 *   The **missings** column highlights the `NA` in Age and Satisfaction.
+
+  <img src="screenshots/example2_2.png" alt="HTML preview" width="90%">
+  *Screenshot of the HTML output device showing the resulting Codebook, with frequency tables and summary statistics.*
 
 ## Author
 
