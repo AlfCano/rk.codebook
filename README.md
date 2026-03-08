@@ -88,6 +88,7 @@ rk.set.label(my_survey$satisfaction, "Self-reported Satisfaction (1-5)")
 5.  Click **Submit**.
 
   <img src="screenshots/example2_1.png" alt="Codebook generation" width="60%">
+  
   *Screenshot of the RKWard interface showing the main panel of rk.codebook and the selection of variables for dictionary generation.*
 
 ### Result
@@ -97,6 +98,7 @@ The Output Window will display a formatted HTML table where:
 *   The **missings** column highlights the `NA` in Age and Satisfaction.
 
   <img src="screenshots/example2_2.png" alt="HTML preview" width="90%">
+  
   *Screenshot of the HTML output device showing the resulting Codebook, with frequency tables and summary statistics.*
 
 ## Author
